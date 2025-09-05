@@ -1,49 +1,55 @@
 # NexusTrace
 
-[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://python.org)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-beta-orange.svg)]()
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://python.org)  
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)  
+[![Status](https://img.shields.io/badge/status-beta-orange.svg)]()  
 
 **Advanced Memory Forensics Analysis Platform**
 
-NexusTrace is a comprehensive memory forensics analysis platform that provides automated threat detection, process tree visualization, IoC extraction, and multi-dump case management for digital forensic investigations.
+NexusTrace is a comprehensive memory forensics analysis platform that delivers automated threat detection, process tree visualization, IoC extraction, and multi-dump case management to support digital forensic investigations.
 
 ![NexusTrace Dashboard](docs/images/dashboard.png)
+
+---
 
 ## 🚀 Features
 
 ### Core Forensic Capabilities
-- **🔍 IoC Extraction** - Automatic extraction of network, file, process, and registry indicators
-- **🌳 Process Tree Visualization** - Interactive process hierarchy with threat analysis
-- **⚡ Enhanced Risk Scoring** - Multi-factor intelligent threat assessment
-- **🛡️ YARA Scanning** - Malware signature detection with custom rules
-- **📊 Timeline Analysis** - Event correlation and attack reconstruction
+- **🔍 IoC Extraction** – Automatic extraction of network, file, process, and registry indicators  
+- **🌳 Process Tree Visualization** – Interactive process hierarchy with threat analysis  
+- **⚡ Enhanced Risk Scoring** – Multi-factor intelligent threat assessment  
+- **🛡️ YARA Scanning** – Malware signature detection with custom rules  
+- **📊 Timeline Analysis** – Event correlation and attack reconstruction  
 
 ### Investigation Workflow
-- **📁 Case Management** - Multi-dump investigation with cross-system correlation
-- **🔗 IoC Correlation** - Find threats across multiple memory dumps
-- **📈 Comparative Analysis** - Identify most/least compromised systems
-- **👥 Multi-user Support** - Collaborative investigation capabilities
+- **📁 Case Management** – Multi-dump investigation with cross-system correlation  
+- **🔗 IoC Correlation** – Identify threats across multiple memory dumps  
+- **📈 Comparative Analysis** – Detect the most and least compromised systems  
+- **👥 Multi-user Support** – Collaborative investigation capabilities  
 
 ### Export & Integration
-- **📤 Multiple Export Formats** - MISP, STIX, JSON, CSV, HTML reports
-- **🔌 API Integration** - RESTful API for automated workflows
-- **📋 Professional Reports** - Executive summaries and technical findings
-- **🎯 Threat Intelligence** - Direct integration with security platforms
+- **📤 Multiple Export Formats** – MISP, STIX, JSON, CSV, HTML reports  
+- **🔌 API Integration** – RESTful API for automated workflows  
+- **📋 Professional Reports** – Executive summaries and technical findings  
+- **🎯 Threat Intelligence** – Direct integration with external security platforms  
+
+---
 
 ## 📋 Requirements
 
 ### System Requirements
-- **Python**: 3.8 or higher
-- **RAM**: 8GB minimum, 16GB recommended
-- **Storage**: 50GB+ for memory dump storage
-- **OS**: Windows, Linux, macOS
+- **Python**: 3.8 or higher  
+- **RAM**: 8GB minimum (16GB recommended)  
+- **Storage**: 50GB+ for memory dump storage  
+- **OS**: Windows, Linux, macOS  
 
 ### Dependencies
-- **Volatility3** - Memory analysis framework
-- **YARA** - Pattern matching engine
-- **Flask** - Web framework
-- **SQLite** - Database (included with Python)
+- **Volatility3** – Memory analysis framework  
+- **YARA** – Pattern matching engine  
+- **Flask** – Web framework  
+- **SQLite** – Lightweight database (bundled with Python)  
+
+---
 
 ## 🛠️ Installation
 
@@ -55,30 +61,29 @@ python setup_nexustrace.py
 ```
 
 ### Option 2: Manual Setup
-## Step 1: Install Dependencies
+
+#### Step 1: Install Dependencies
 ```bash
-Step 1: Install Dependencies
 python -m venv nexustrace-env
-source nexustrace-env/bin/activate  # Linux/Mac
-or
-nexustrace-env\Scripts\activate     # Windows
+source nexustrace-env/bin/activate   # Linux/Mac
+nexustrace-env\Scripts\activate      # Windows
 
 pip install -r requirements.txt
 ```
 
-## Step 2: Initialize Database
+#### Step 2: Initialize Database
 ```bash
 python scripts/create_database.py
 ```
 
-## Step 3: Create Required Directories
+#### Step 3: Create Required Directories
 ```bash
 mkdir -p memory_dumps output/plugins output/dumps sessions \
          yara_rules/malware yara_rules/general yara_rules/custom \
          config logs
 ```
 
-## Step 4: Set Up YARA Rules (Optional)
+#### Step 4: Set Up YARA Rules (Optional)
 ```bash
 cat > yara_rules/malware/basic_rules.yar << 'EOF'
 rule Suspicious_PowerShell_Commands
@@ -100,13 +105,28 @@ rule Suspicious_PowerShell_Commands
 EOF
 ```
 
-## Step 5: Run NexusTrace
+#### Step 5: Run NexusTrace
 ```bash
 python web/app.py
 ```
 
-## Open browser and navigate to:
+#### Step 6: Open Browser
+Navigate to:
 ```bash
 http://localhost:5000
 ```
 
+---
+
+## 👥 Contributors
+NexusTrace is developed and maintained by the following contributors:
+
+| Name               | GitHub Profile |
+|--------------------|----------------|
+| Yashvardhan Sharma | [@yourstruelyyash](https://github.com/yourstruelyyash) |
+| Debajit Debnath    | [@D3b41t](https://github.com/D3b41t) |
+
+---
+
+## 📜 License
+This project is licensed under the [MIT License](LICENSE).  
