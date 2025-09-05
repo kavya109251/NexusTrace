@@ -1,0 +1,131 @@
+# Core Web Framework
+Flask
+Werkzeug
+Jinja2
+itsdangerous
+click
+
+# Security & Authentication
+bcrypt
+cryptography
+PyJWT
+
+# Database
+# sqlite3 is built-in with Python
+
+# Data Processing & Analysis
+pandas
+numpy
+scipy
+
+# File & Path Handling
+pathlib2
+python-magic
+python-magic-bin
+
+# Forensic Analysis Tools
+volatility3
+yara-python
+pefile
+capstone
+
+# Network & HTTP
+requests
+urllib3
+
+# Time & Date Processing
+python-dateutil
+
+# System Utilities
+psutil
+distro
+
+# Async Processing
+# asyncio is built-in with Python 3.7+
+
+# Logging & Monitoring
+coloredlogs
+structlog
+
+# Configuration Management
+# configparser is built-in with Python
+
+# Export & Report Generation
+openpyxl
+reportlab
+Pillow
+fpdf2
+
+# JSON/XML Processing
+lxml
+xmltodict
+jsonschema
+
+# Regex & Pattern Matching
+regex
+
+# Compression & Archives
+py7zr
+rarfile
+
+# Memory & Performance
+memory-profiler
+pympler
+
+# Math & Statistics
+statistics
+
+# Text Processing
+charset-normalizer
+chardet
+
+# Web Security
+flask-limiter
+flask-cors
+
+# Template Processing
+markupsafe
+
+# Development & Testing (optional)
+pytest
+pytest-cov
+pytest-mock
+black
+flake8
+mypy
+pre-commit
+
+# Documentation (optional)
+sphinx
+sphinx-rtd-theme
+
+# Performance Enhancement (optional)
+cython
+numba
+
+# Type Hints
+typing-extensions
+
+# UUID & Hash (built-in modules)
+# uuid - built-in
+# hashlib - built-in
+# json - built-in
+# os - built-in
+# sys - built-in
+# re - built-in
+# datetime - built-in
+# collections - built-in
+# functools - built-in
+# itertools - built-in
+# threading - built-in
+# multiprocessing - built-in
+# subprocess - built-in
+# tempfile - built-in
+# shutil - built-in
+# glob - built-in
+# pickle - built-in
+# base64 - built-in
+# zlib - built-in
+# gzip - built-in
+# tarfile - built-in
+# zipfile - built-in
