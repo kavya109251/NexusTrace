@@ -65,7 +65,6 @@ python setup_nexustrace.py
 ```bash
 python -m venv nexustrace-env
 source nexustrace-env/bin/activate   # Linux/Mac
-nexustrace-env\Scripts\activate      # Windows
 
 pip install -r requirements.txt
 ```
