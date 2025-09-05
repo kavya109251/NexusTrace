@@ -112,7 +112,7 @@ python web/app.py
 #### Step 6: Open Browser
 Navigate to:
 ```bash
-http://localhost:5000
+http://localhost:8090
 ```
 
 ---
