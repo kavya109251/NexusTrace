@@ -8,7 +8,6 @@
 
 NexusTrace is a comprehensive memory forensics analysis platform that delivers automated threat detection, process tree visualization, IoC extraction, and multi-dump case management to support digital forensic investigations.
 
-![NexusTrace Dashboard](docs/images/dashboard.png)
 
 ---
 
