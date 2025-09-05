@@ -124,7 +124,7 @@ NexusTrace is developed and maintained by the following contributors:
 | Name               | GitHub Profile |
 |--------------------|----------------|
 | Yashvardhan Sharma | [@yourstruelyyash](https://github.com/yourstruelyyash) |
-| Debajit Debnath    | [@D3b41t](https://github.com/D3b41t) |
+| Debajit Debnath    | [@D3b4j1t](https://github.com/D3b4j1t) |
 
 ---
 
